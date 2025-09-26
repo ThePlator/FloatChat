@@ -25,8 +25,8 @@ export default function HeroSection() {
         </p>
         <div className="flex items-center justify-center gap-3">
           <Link
-            href="/dashboard"
-            className="inline-flex items-center justify-center rounded-xl bg-[--color-accent] text-white px-8 py-4 text-lg font-semibold shadow-[0_4px_14px_0_rgba(249,115,22,0.39)] hover:bg-[#EA580C]">
+            href="/login"
+            className="inline-flex items-center justify-center rounded-xl bg-orange-500 text-white px-8 py-4 text-lg font-semibold shadow-[0_4px_14px_0_rgba(249,115,22,0.39)] hover:bg-orange-600">
             Start Exploring
           </Link>
           <a

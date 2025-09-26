@@ -20,16 +20,16 @@ export default function Navbar() {
           <a href="#how" className="hover:text-slate-900">
             How It Works
           </a>
-          <a href="#about" className="hover:text-slate-900">
+          <Link href="/about" className="hover:text-slate-900">
             About
-          </a>
+          </Link>
         </nav>
         <div className="flex items-center gap-3">
           <button className="hidden md:inline-flex items-center rounded-md border border-[--color-border] px-4 py-2 text-sm font-medium hover:bg-slate-50">
             Contact
           </button>
           <Link
-            href="/dashboard"
+            href="/login"
             className="inline-flex items-center rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-medium hover:bg-[#333333] shadow-sm">
             Launch Dashboard
           </Link>
@@ -50,11 +50,11 @@ export default function Navbar() {
             <a href="#how" onClick={() => setOpen(false)} className="py-1">
               How It Works
             </a>
-            <a href="#about" onClick={() => setOpen(false)} className="py-1">
+            <Link href="/about" onClick={() => setOpen(false)} className="py-1">
               About
-            </a>
+            </Link>
             <Link
-              href="/dashboard"
+              href="/login"
               onClick={() => setOpen(false)}
               className="py-2 rounded-md bg-slate-900 text-white text-center">
               Launch Dashboard

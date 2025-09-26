@@ -4,6 +4,7 @@ export const metadata = {
     "Learn about QuARGO's goals, technology stack, ARGO data sources, usage guide, and glossary.",
 };
 
+import Navbar from '../../components/Navbar';
 import AboutHeader from '../../components/about/AboutHeader';
 import OnThisPageNav from '../../components/about/OnThisPageNav';
 import OverviewSection from '../../components/about/OverviewSection';
@@ -14,6 +15,7 @@ import GlossarySection from '../../components/about/GlossarySection';
 export default function AboutPage() {
   return (
     <div className="font-sans">
+      <Navbar />
       <AboutHeader />
       <main className="max-w-7xl mx-auto px-6 sm:px-8 py-12 sm:py-16">
         <OnThisPageNav />
