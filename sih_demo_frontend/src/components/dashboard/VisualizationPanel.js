@@ -20,7 +20,7 @@ export default function VisualizationPanel({ queryData }) {
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Tab Navigation */}
-      <div className="border-b border-[--color-border]">
+      <div className="border-b border-[--color-border] flex-shrink-0">
         <nav className="flex space-x-8 px-6" aria-label="Tabs">
           {tabs.map((tab) => (
             <button
@@ -38,7 +38,7 @@ export default function VisualizationPanel({ queryData }) {
       </div>
 
       {/* Tab Content */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-auto min-h-0">
         {ActiveComponent && <ActiveComponent queryData={queryData} />}
       </div>
     </div>

@@ -69,17 +69,7 @@ export default function ChatSidebar({ onQuerySubmit }) {
   ];
 
   return (
-    <div className="flex flex-col h-full bg-white border-r border-[--color-border]">
-      {/* Chat Header */}
-      <div className="p-4 border-b border-[--color-border]">
-        <h2 className="text-lg font-semibold text-gray-900">
-          ARGO Data Assistant
-        </h2>
-        <p className="text-sm text-[--color-text-secondary]">
-          Ask me anything about ocean data
-        </p>
-      </div>
-
+    <div className="flex flex-col h-full bg-white">
       {/* Messages Area */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.map((message) => (
